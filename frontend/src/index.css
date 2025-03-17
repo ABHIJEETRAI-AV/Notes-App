@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+@theme {
+  --font-fun: "Fleur De Leah", serif;
+  --font-artist:  "Raleway", serif;
+  --font-login: "Leckerli One", cursive;
+  --font-notes:  "Playwrite HU", cursive;
+  --font-title:  "Merriweather", serif;
+
+}
+
+@layer utilities {
+  textarea:focus,
+  input:focus {
+    @apply outline-none;
+  }
+}
