@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import close from 'D:/Notes app/frontend/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import check from 'D:/Notes app/frontend/src/assets/check_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import close from '/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import check from '/src/assets/check_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
 
 function EditNote() {
     const route = useLocation();

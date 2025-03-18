@@ -4,9 +4,9 @@ import { useLocation } from 'react-router';
 import { useNavigate } from 'react-router';
 import { useForm } from "react-hook-form";
 import { useEffect } from 'react';
-import account from 'D:/Notes app/frontend/src/assets/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import add from 'D:/Notes app/frontend/src/assets/add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import close from 'D:/Notes app/frontend/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import account from '/src/assets/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import add from '/src/assets/add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import close from '/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
 // import { useRoute } from 'react'
 
 function Home() {

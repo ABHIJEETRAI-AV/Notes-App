@@ -1,9 +1,9 @@
 import React from 'react'
 import { useLocation } from 'react-router';
 import { useNavigate } from 'react-router';
-import close from 'D:/Notes app/frontend/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import recycle from 'D:/Notes app/frontend/src/assets/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import edit from 'D:/Notes app/frontend/src/assets/edit_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import close from '/src/assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import recycle from '/src/assets/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import edit from '/src/assets/edit_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
 function ReadNote1() {
   const route = useLocation();
   const navigate = useNavigate();
