@@ -184,6 +184,10 @@ function AddTitle({render, setRender}) {
 
   const [title, setTitle] = useState(null)
   console.log(title)
+  const token = localStorage.getItem('token')
+  
+
+  console.log(token)
 
   const route = useLocation();
 
@@ -196,7 +200,7 @@ function AddTitle({render, setRender}) {
         setTitle(JSON.stringify(data))
 
         console.log(route.state)
-        navigate('/readNote', { state: { res: data, user: route.state } });
+        navigate('/readNote', { state: { res: data, user: token } });
 
       })}
       

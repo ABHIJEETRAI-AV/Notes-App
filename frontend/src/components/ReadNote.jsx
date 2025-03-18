@@ -15,6 +15,7 @@ function ReadNote() {
   } = useForm();
 
   const [content, setContent] = useState(null)
+  const [count , setCount] = useState(0)
 const navigate = useNavigate();
   const route = useLocation();
   console.log(route.state)
@@ -24,7 +25,7 @@ const navigate = useNavigate();
   const postData = {
     title: title,
     content: content,
-    user: user.user.res.user._id
+    user: user.user
   }
   console.log(postData)
 
@@ -62,6 +63,10 @@ navigate('/home')
 
   }
 
+  if(count==2){
+    navigateHome()
+  }
+
   return (
     <div>
 
@@ -73,6 +78,7 @@ navigate('/home')
       <form onSubmit={handleSubmit((data) => {
         setContent(JSON.stringify(data.content))
         postContent(postData)
+        setCount(count + 1)
 
       })}>
         <div className='flex flex-col items-center justify-center w-[100%] h-[100%] mt-2'>
