@@ -33,7 +33,7 @@ function Home() {
 const [notes , setNotes] = useState(null)
   async function getNotesList(userId) {
     console.log(userId)
-    const response = await fetch("http://localhost:3000/getNotesList", {
+    const response = await fetch("https://notes-app-ten-livid.vercel.app/getNotesList", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ function NoteCard({ key, note }) {
 
   const [name, setName] = useState(null)
   async function getCredentials() {
-    const response = await fetch("http://localhost:3000/", {
+    const response = await fetch("https://notes-app-ten-livid.vercel.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

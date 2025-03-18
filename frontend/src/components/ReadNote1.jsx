@@ -42,7 +42,7 @@ function DeleteNode({ id }) {
 
   async function deleteElement(id) {
     // console.log(id)
-    const response = await fetch("http://localhost:3000/delete", {
+    const response = await fetch("https://notes-app-ten-livid.vercel.app/delete", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

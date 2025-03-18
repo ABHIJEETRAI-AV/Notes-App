@@ -44,7 +44,7 @@ const navigate = useNavigate();
   //   console.log(token)
 
   async function postContent(postData) {
-    const response = await fetch("http://localhost:3000/title", {
+    const response = await fetch("https://notes-app-ten-livid.vercel.app/title", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

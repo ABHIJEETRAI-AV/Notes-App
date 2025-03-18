@@ -15,7 +15,7 @@ const [noteContent, setNoteContent] = useState(null)
 
     async function getNoteContent(userId) {
         console.log(userId)
-        const response = await fetch("http://localhost:3000/getNoteContent", {
+        const response = await fetch("https://notes-app-ten-livid.vercel.app/getNoteContent", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -60,7 +60,7 @@ useEffect(() => {
 
       async function updateNote(content, id) {
           console.log(content)
-          const response = await fetch("http://localhost:3000/updateNote", {
+          const response = await fetch("https://notes-app-ten-livid.vercel.app/updateNote", {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",

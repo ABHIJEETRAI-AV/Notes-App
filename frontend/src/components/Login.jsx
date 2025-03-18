@@ -20,7 +20,7 @@ function Login() {
   const navigate = useNavigate();
 
   async function postData(data) {
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch("https://notes-app-ten-livid.vercel.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

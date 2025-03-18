@@ -18,7 +18,7 @@ function SignUp() {
  const [data, setData] = useState(null)
  
  async function postData( data ) {
- const response = await fetch("http://localhost:3000/SignUp", {
+ const response = await fetch("https://notes-app-ten-livid.vercel.app/SignUp", {
      method: "POST",
      // mode: "cors",
      // cache: "no-cache",
